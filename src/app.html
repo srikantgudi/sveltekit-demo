@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+		<style>
+			* {
+				font-family: helvetica;
+				font-weight: 400;
+			}
+			thead {
+				position: sticky;
+				top: 0;
+				background-color: #666;
+				color: whitesmoke;
+			}
+			td {
+				padding: 0.25rem 0.5rem;
+			}
+            table {
+                background-color: whitesmoke;
+                color: #333;
+            }
+            a {
+                background-color: inherit;
+                color: #00c;
+            }
+			tbody tr:nth-child(even) {
+				background-color: #e0e0e0;
+			}
+			nav a {
+			    background-color: inherit;
+			    color: whitesmoke;
+            }
+			html {
+			    background-color: #333;
+			    color: whitesmoke;
+			}
+			a {
+			    text-decoration: none;
+            }
+            body {
+                margin: 1vh 10vw;
+            }
+		</style>
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
