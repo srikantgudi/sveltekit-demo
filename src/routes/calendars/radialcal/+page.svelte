@@ -35,7 +35,7 @@
                 <circle r={28} stroke="blue" stroke-width="0.5"/>
                 <circle r={20} stroke="blue" stroke-width="0.5"/>
                 {#each yearMarks as m,y}
-                    <rect rx="1" stroke="white" stroke-width={y+startyear==dt.year ? '0.3' : '0'} cy={4} cx={4} x={m.x-5} y={m.y-4} width={10} height={6} class="rounded-sm" />
+                    <rect rx="1" stroke="white" fill="none" stroke-width={y+startyear==dt.year ? '0.3' : '0'} cy={4} cx={4} x={m.x-5} y={m.y-4} width={10} height={6} class="rounded-sm" />
                     <text class="cursor-pointer"  x={m.x} y={m.y} 
                         font-size={m.fontsize} font-weight={m.fontwt} text-anchor="middle" fill={m.color}
                         onclick={setYear(m.val)}
@@ -44,7 +44,7 @@
                     </text>
                 {/each}
                 {#each monthMarks as m,i}
-                    <rect rx="1" stroke="white" stroke-width={i==dt.month-1 ? '0.3' : '0'} cy={4} cx={4} x={m.x-5} y={m.y-4} width={10} height={6} class="rounded-sm" />
+                    <rect rx="1" stroke="white" fill="none" stroke-width={i==dt.month-1 ? '0.3' : '0'} cy={4} cx={4} x={m.x-5} y={m.y-4} width={10} height={6} class="rounded-sm" />
                     <text class="cursor-pointer"  x={m.x} y={m.y} 
                         font-size={m.fontsize} font-weight={m.fontwt} text-anchor="middle" fill={m.color}
                         onclick={dt = dt.set({month: i+1})}
@@ -53,16 +53,16 @@
                     </text>
                 {/each}
                 {#each dayMarks as m,i}
-                <rect rx="1" stroke="white" stroke-width={i==dt.day ? '0.3' : '0'} cy={4} cx={4} x={m.x-2} y={m.y-4} width={4} height={6} class="rounded-sm" />
+                <rect rx="1" stroke="white" fill="none" stroke-width={i==dt.day ? '0.3' : '0'} cy={4} cx={4} x={m.x-2} y={m.y-4} width={4} height={6} class="rounded-sm" />
                 <text class="cursor-pointer" x={m.x} y={m.y} 
                     font-size={m.fontsize} font-weight={m.fontwt} text-anchor="middle" fill={m.color}
                     onclick={() => {dt = dt.set({day: i+1})}}
-                >
+                    >
                     {m.val}
                 </text>
                 {/each}
                 {#each weekdayMarks as m,i}
-                <rect rx="1" stroke="white" stroke-width={i==dt.weekday ? '0.3' : '0'} cy={4} cx={4} x={m.x-5} y={m.y-4} width={10} height={6} class="rounded-sm" />
+                <rect rx="1" stroke="white" fill="none" stroke-width={i==dt.weekday ? '0.3' : '0'} cy={4} cx={4} x={m.x-5} y={m.y-4} width={10} height={6} class="rounded-sm" />
                 <text class="cursor-pointer" x={m.x} y={m.y} 
                     font-size={m.fontsize} font-weight={m.fontwt} text-anchor="middle" fill={m.color}>
                     {m.val}
