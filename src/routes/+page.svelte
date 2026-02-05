@@ -14,13 +14,6 @@
                     <li class="pl-2">User can view a custom time by selecting a custom input time</li>
                 </ul>
             </li>
-            <li class="px-4">
-                <p>Dynamic data:
-                <ul class="ml-8 list-disc">
-                    <li>to view various API data from <a style="color:cyan" href="https://jsonplaceholder.typicode.com">https://jsonplaceholder.typicode.com</a></li>
-                    <li>This uses inner layout and router outlet</li>
-                </ul>
-            </li>
             <li class="px-4">Calendars - core feature of the app
                 <ul class="ml-8 list-disc">
                     <li>**Monthly**  - Regular calendar with year navigation  `[-20] [-10] [Today] [+10] [+20]`</li>
@@ -29,11 +22,10 @@
                 </ul>
             </li>
             <li class="px-4">
-                Svelte-features - some of the features shown:
+                <p>Dynamic data:
                 <ul class="ml-8 list-disc">
-                    <li>Stores demo</li>
-                    <li>`svelte-component` toggle</li>
-                    <li>Checkbox selection</li>
+                    <li>to view various API data from <a style="color:cyan" href="https://jsonplaceholder.typicode.com">https://jsonplaceholder.typicode.com</a></li>
+                    <li>This uses inner layout and router outlet</li>
                 </ul>
             </li>
         </ul>

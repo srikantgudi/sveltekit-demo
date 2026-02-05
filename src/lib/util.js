@@ -53,7 +53,7 @@ const util = {
             let fontwt = currentVal == m ? '600' : '400';
             let color = currentVal == m ? hiliteColor : valueColor;
             let val = m;
-            arr.push({x, y, val, fontsize, fontwt, color});
+            arr.push({x, y, val, fontsize, fontwt, color, i});
         })
         return arr;
     }
