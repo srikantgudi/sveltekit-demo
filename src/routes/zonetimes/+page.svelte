@@ -15,10 +15,10 @@
 	let zto = $derived(zstart+10);
 	let minidx = $state(10);
 	let maxidx = $derived(allTimezones.length - 10);
-	let zone = $state(allTimezones[0]);
 	let zang = $derived(360/10);
 	let region = $state('Africa');
 	let zoneSet = $derived(allTimezones.filter(x => x.includes(region)));
+	let zone = $derived(zoneSet[0]);
     let selectSize = $derived(zoneSet.length > 20 ? 20 : zoneSet.length);
 	let zonemarks = $derived(util.marksValueArray(zoneSet,38,zone,3,5,'#999','#099'));
 	
